@@ -6,13 +6,13 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: test-app-group
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:183631321229:certificate/37cb2c34-485d-47d8-9c8a-05d306be1b6b
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: '443'
+ #   alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:183631321229:certificate/37cb2c34-485d-47d8-9c8a-05d306be1b6b
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 80}]'
+#    alb.ingress.kubernetes.io/ssl-redirect: '443'
 spec:
   ingressClassName: alb
   rules:
-    - host: app3.ajml.online
+    - host: app5.ajml.online
       http:
         paths:
           - path: /
