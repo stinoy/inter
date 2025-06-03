@@ -12,7 +12,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: app5.ajml.online
+    - host: app6.ajml.online
       http:
         paths:
           - path: /
